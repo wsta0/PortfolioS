@@ -1,6 +1,6 @@
-# 🌐 Personal Portfolio
+# 🌐 PortfolioS
 
-This is my **personal portfolio website** built with **React + TailwindCSS + Vanta.js**.  
+This is my ** sample personal portfolio website** built with **React + TailwindCSS + Vanta.js**.  
 It showcases my skills, projects, achievements, blog, and more in a modern, responsive UI.
 
 ---
