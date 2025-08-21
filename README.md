@@ -25,5 +25,13 @@ It showcases my skills, projects, achievements, blog, and more in a modern, resp
 - **Other:** GitHub API, shadcn/ui components  
 
 ---
-
+## 📂 Project Structure
+portfolio/
+┣ 📂 src/
+┃ ┣ 📂 components/ # Reusable UI components
+┃ ┣ App.jsx # Main App file
+┃ ┣ index.jsx # Entry point
+┣ public/ # Static assets (favicon, images)
+┣ package.json # Dependencies & scripts
+┗ tailwind.config.js # Tailwind setup
 
