@@ -1,20 +1,29 @@
-# Recruiter Portfolio (React + Vite + Tailwind + Framer Motion)
-Unique, professional portfolio inspired by three sources (vCard hero/about, React projects grid, modern skills/contact), unified under one theme.
+# 🌐 Personal Portfolio
 
-## Quick Start
-```bash
-npm install
-npm run dev
-```
+This is my **personal portfolio website** built with **React + TailwindCSS + Vanta.js**.  
+It showcases my skills, projects, achievements, blog, and more in a modern, responsive UI.
 
-## Customize
-- Update text in `src/App.jsx`, images in `public/`.
-- Replace `YOUR_FORM_ID` in the contact form action with your Formspree endpoint.
-- Change name/links in Nav, Contact, Footer.
+---
 
-## Build & Deploy
-```bash
-npm run build
-```
-Upload `dist/` to Netlify or Vercel (build: `npm run build`, output: `dist`).
+## ✨ Features
+- 🎨 **Modern UI/UX** with TailwindCSS  
+- 🌑 **Dark/Light mode** toggle  
+- 🕸️ **Interactive Vanta.js background**  
+- 👨‍💻 **Projects showcase** with live links & GitHub repos  
+- 🏆 **Achievements & Testimonials section**  
+- 📊 **GitHub Stats integration** (followers, repos, stars)  
+- ✍️ **Blog section** for sharing thoughts & updates  
+- 📩 **Contact form** for easy communication  
+- 📈 **SEO & Analytics ready**
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React, TailwindCSS  
+- **Animations:** Vanta.js, Framer Motion  
+- **Icons:** React Icons, Lucide  
+- **Other:** GitHub API, shadcn/ui components  
+
+---
+
 
