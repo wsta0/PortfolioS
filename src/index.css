@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables (palette applied via ThemeProvider) */
+:root { 
+  --brand: #000704d2; 
+  --brand-dark: #010c0bde; 
+}
+
+html, body, #root { 
+  height: 100%; 
+}
+
+body { 
+  @apply font-display antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+}
+
+.container { 
+  @apply max-w-6xl mx-auto px-4; 
+}
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* ----------------- */
+/* COMPONENT STYLES  */
+/* ----------------- */
+
+/* Buttons */
+.btn { 
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-xl border transition 
+         active:scale-[.98] bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 
+         hover:bg-gray-50 dark:hover:bg-gray-800;
+}
+
+.btn-primary { 
+  @apply text-white; 
+  background: var(--brand);
+  border-color: var(--brand);
+}
+.btn-primary:hover { 
+  background: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+/* Brand Button (outlined) */
+.btn-brand { 
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-xl border transition;
+  border-color: var(--brand);
+  color: var(--brand);
+}
+.btn-brand:hover { 
+  background: var(--brand); 
+  color: #fff; 
+}
+
+/* Badges */
+.badge { 
+  @apply inline-flex items-center gap-2 px-3 py-1 rounded-full border text-sm;
+  border-color: var(--brand);
+  background: color-mix(in srgb, var(--brand) 10%, transparent);
+  color: var(--brand);
+}
+
+/* Cards */
+.card { 
+  @apply rounded-2xl border shadow-soft bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800; 
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(37, 37, 37);
+  background: white;
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background: rgb(193, 228, 248);
+  color: rgb(33, 0, 85);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.hoverEffect div {
+  background: linear-gradient(
+    90deg,
+    rgba(222, 0, 75, 1) 0%,
+    rgba(191, 70, 255, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.button:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

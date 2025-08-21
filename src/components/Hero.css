@@ -1,0 +1,29 @@
+.hero-section {
+  @apply container flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 min-h-screen py-20 px-6 relative;
+  background: linear-gradient(to right, #ff3f81, #b5179e); /* Magenta gradient */
+  border-radius: 1rem;
+}
+
+.hero-content {
+  @apply flex flex-col items-center md:items-start max-w-2xl;
+}
+
+.hero-title {
+  @apply text-5xl md:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white;
+}
+
+.hero-text {
+  @apply mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300  line: height 1em;;
+}
+
+.hero-buttons {
+  @apply mt-8 flex flex-wrap justify-center md:justify-start gap-7 ml-10;
+}
+
+.hero-badges {
+  @apply mt-10 flex flex-wrap justify-center md:justify-start gap-3;
+}
+
+.hero-image {
+  @apply flex justify-center md:justify-end;
+}

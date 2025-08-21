@@ -1,0 +1,62 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color variables - updated to Magenta/Purple palette */
+:root {
+  --primary-color: #ff3f81;        /* vibrant magenta */
+  --secondary-color: #b5179e;      /* deep purple-magenta */
+  --complimentary-color: #7209b7;  /* rich violet for accents */
+  --contrast-color: #f72585;       /* hot pink for highlights */
+  --light-color: #fbb6ce;          /* soft pastel pink for lighter backgrounds */
+}
+
+/* Override the container background */
+body {
+  font-family: Montserrat, sans-serif;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: #fff; /* default text white for contrast */
+}
+
+/* Custom nav overrides */
+nav a {
+  font-size: 18px;
+  color: var(--light-color);
+  text-decoration: none;
+  padding: 12px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--contrast-color);
+}
+
+/* Section styles - stacked instead of fullscreen absolute */
+section {
+  min-height: 100vh;   /* takes full screen height but doesn’t overlap */
+  width: 100%;
+  opacity: 1;
+  transition: all ease-in 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;  /* no absolute, so footer shows */
+}
+
+/* Section headings */
+section h1 {
+  color: #fff;
+  font-size: 50px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+/* FadeIn animation (optional) */
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
