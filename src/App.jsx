@@ -12,8 +12,6 @@ import Achievements from "./components/Achievements";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
-// Extra features
 import Testimonials from "./components/Testimonials";
 import GitHubStats from "./components/GitHubStats";
 import SEO from "./components/SEO";
@@ -45,7 +43,6 @@ export default function App() {
         backgroundColor: 0x000000,
         onInit: () => {
           console.log("✅ Vanta initialized");
-          // we don’t hide loader here yet, wait for data too
         }
       });
     }
